@@ -2,22 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  h1 {
+    @apply text-3xl;
+    @apply font-rubik;
+    @apply text-[#07504F];
+    @apply font-semibold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-rubik;
+    @apply text-[#07504F];
+    @apply font-semibold;
+  }
 
-    h1 {
-        @apply text-3xl;
-        @apply font-rubik;
-        @apply text-[#07504F];
-        @apply font-semibold
+  h3 {
+    @apply text-2xl;
+    @apply font-rubik;
+    @apply text-[#07504F];
+    @apply font-semibold;
+  }
 
-      }
-      h2{
-        @apply text-2xl;
-        @apply font-rubik;
-        @apply text-[#07504F];
-        @apply font-semibold
-      }
-      p{
-        @apply font-rubik;
-      }
+  p {
+    @apply font-rubik;
+  }
 }

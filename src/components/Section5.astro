@@ -1,14 +1,28 @@
 ---
-
+import { Image } from "astro:assets";
+import kaffe from "../assets/images/kaffe.png";
+import creme from "../assets/images/creme.png";
+import toej from "../assets/images/toej.png";
+import ren from "../assets/images/ren.png";
+import vand from "../assets/images/vand.png";
+import vask from "../assets/images/vask.png";
 ---
 
 <section>
   <h1>section 5 - Tag kampen op allerede i dag!</h1>
-  <p>
-    Her er 6 råd om hvordan du i dagligdagen kan støtte kampen mod
-    plastikforurening
-  </p>
+  <p>Her er 6 råd om hvordan du i dagligdagen kan støtte kampen mod plastikforurening</p>
 </section>
-<section>
-  <p>Her kommer råd</p>
+<section class="">
+  <div class="grid grid-cols-2 justify-items-center">
+    <Image src={toej} alt="" class="w-8/12" />
+    <Image src={creme} alt="" class="w-8/12" />
+  </div>
+  <div class="grid grid-cols-2 justify-items-center">
+    <Image src={kaffe} alt="" class="w-8/12" />
+    <Image src={vask} alt="" class="w-8/12" />
+  </div>
+  <div class="grid grid-cols-2 justify-items-center">
+    <Image src={ren} alt="" class="w-8/12" />
+    <Image src={vand} alt="" class="w-8/12" />
+  </div>
 </section>

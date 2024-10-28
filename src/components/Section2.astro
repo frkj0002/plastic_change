@@ -1,13 +1,14 @@
 ---
-
+import { Image } from "astro:assets";
+import diagram from "../assets/images/soejlediagram.png";
+import hul from "../assets/images/hul.svg";
 ---
 
 <section>
   <h1>section 2 - Hvordan bliver plastik brugt?</h1>
-  <p>
-    Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun
-    brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.
-  </p>
+  <p>Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.</p>
+  <Image src={diagram} alt="" class="" />
+  <!-- <Image src={hul} alt="" class="" /> -->
 </section>
 <section>
   <p>Diagram</p>
