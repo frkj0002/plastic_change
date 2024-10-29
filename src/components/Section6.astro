@@ -2,6 +2,48 @@
 
 ---
 
-<section>
+<section class="fullwidthsection">
   <h1>section 6 - Vores arbejde</h1>
+  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
+			<p class="w-3/4 lg:w-1/4 mx-auto p-10 bg-slate-50 text-xl stickyparallax1">Well, the way they make shows is, they make one show. That show's called a pilot.</p>
+		</div>
+  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
+			<p class="w-3/4 lg:w-1/4 mx-auto p-10 bg-slate-50 text-xl stickyparallax2">Well, the way they make shows is, they make one show. That show's called a pilot.</p>
+		</div>
+  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
+			<p class="w-3/4 lg:w-1/4 mx-auto p-10 bg-slate-50 text-xl stickyparallax3">Well, the way they make shows is, they make one show. That show's called a pilot.</p>
+		</div>
 </section>
+
+<style>
+  .fullwidthsection{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+</style>
+	<script>
+	/* Import af Motion One biblioteket */
+	import { animate, stagger, inView, scroll, timeline } from "motion";
+  scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
+		target: document.querySelector(".stickyparallax1"),
+	});
+  scroll(animate(".stickyparallax2", { y: [-300, 0] }), {
+		target: document.querySelector(".stickyparallax2"),
+	});
+  scroll(animate(".stickyparallax3", { y: [-300, 0] }), {
+		target: document.querySelector(".stickyparallax3"),
+	});
+	// import { animate, stagger, inView, scroll, timeline } from "motion";
+  // scroll(animate(".stickyparallax2", { y: [-500, 0] }), {
+	// 	target: document.querySelector(".stickyparallax2"),
+	// });
+	// import { animate, stagger, inView, scroll, timeline } from "motion";
+  // scroll(animate(".stickyparallax3", { y: [-500, 0] }), {
+	// 	target: document.querySelector(".stickyparallax3"),
+	// });
+
+	</script>
