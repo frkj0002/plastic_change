@@ -7,22 +7,22 @@ import medalje from "../assets/images/medalje.png";
 import Button from "../components/Button.astro";
 ---
 
-<section>
-  <h1>section 4 - Danmark er europamestre i affald</h1>
-  <p>Danmark er det land i Europa, der genererer mest affald pr. indbygger. På trods af, at vi i Danmark har et veludviklet affaldssystem, hvor skraldemænd indsamler skrald og kører det til for eksempel forbrændingsanlæg, så ser vi stadig rigtig meget plastikforurening rundt omkring i den danske natur”</p>
+<section class="max-w-2xl mx-auto">
+  <h1 class="">section 4 - Danmark er europamestre i affald</h1>
+  <p class="max-w-lg">Danmark er det land i Europa, der genererer mest affald pr. indbygger. På trods af, at vi i Danmark har et veludviklet affaldssystem, så ser vi stadig rigtig meget plastikforurening i den danske natur”</p>
   <div class="flex justify-center items-center">
-    <Image src={skrald} alt="" class="size-32" />
-    <h3 class="text-[#FF1054]">= 1kg</h3>
+    <Image src={skrald} alt="" class="size-32 hidden md:block" />
+    <h3 class="text-[#FF1054] hidden md:block">= 1kg</h3>
   </div>
 </section>
 <section class="grid grid-cols-2 justify-items-center">
-  <article>
+  <article class="hidden md:block">
     <h3 class="text-[#FF1054]">Danmarks gennemsnit</h3>
     <Image src={dk_skrald} alt="" class="" />
     <p class="text-[128px] text-[#FF1054]">777 kg</p>
   </article>
   <article class="grid content-between">
-    <div>
+    <div class="hidden md:block">
       <h3 class="text-[#FF1054]">Europas gennemsnit</h3>
       <Image src={eu_skrald} alt="" class="" />
       <p class="text-[128px] text-[#FF1054]">450 kg</p>
