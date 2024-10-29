@@ -2,20 +2,36 @@
 import Button from "../components/Button.astro";
 ---
 
-<section class="text-white bg-[#07504F] grid grid-cols-2">
+<section class="text-white bg-[#07504F] flex justify-between pt-6 pb-20 px-4">
   <article>
-    <p>tilmeld nyhedsbrev</p>
-    <p>slot til å sette ind mail</p>
-    <Button>Støt nu</Button>
-  </article>
-  <article>
-    <div>
-      <p>Kontakt</p>
-      <p>+45 42 66 72 46</p>
-      <p>info@plasticchange.org</p>
+    <label for="email" class="block">Tilmeld nyhedsbrev</label>
+    <div class="mt-2">
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autocomplete="email"
+        class="block w-full border-b-2 border-white py-1.5 bg-[#07504F] text-white placeholder:text-white"
+        placeholder="andersand@gmail.com"
+      />
     </div>
-    <div>
-      <p>ikoner til socials</p>
+    <div class="py-4">
+      <Button>Støt nu</Button>
+    </div>
+    <h2 class="text-white">plastic change</h2>
+  </article>
+  <article class="flex flex-col content-between">
+    <div class="text-right">
+      <p>Kontakt</p>
+      <a href="tel:+4542667246">+45 42 66 72 46</a>
+      <p>
+        <a href="mailto:info@plasticchange.org" target="_blank"
+          >info@plasticchange.org</a
+        >
+      </p>
+    </div>
+    <div class="self-end">
+      <p>(ikoner til socials)</p>
     </div>
   </article>
 </section>
