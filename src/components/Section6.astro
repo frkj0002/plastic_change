@@ -1,22 +1,61 @@
 ---
-import Button from "./Button.astro"
+import Button from "./Button.astro";
 ---
 
 <section class="fullwidthsection">
-  <h1>section 6 - Vores arbejde</h1>
-  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
-	<p class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax1"><span class="text-2xl font-semibold">Uddannelse</span><br>I Plastic Change ser vi det som en vigtig opgave at give kommende generationer mulighed for at blive aktive medskabere af en grønnere fremtid. Derfor har vi udarbejdet gratis undervisningsmateriale til folkeskole- og gymnasieelever, der har til formål at oplyse, uddanne og engagere fremtidige generationer i forhold til den stigende plastikforurening.</p>
-</div>
-  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
-	<p class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax2"><span class="text-2xl font-semibold">Virksomheder</span><br>Flere og flere virksomheder indser vigtigheden i at bidrage til løsningen af den stigende plastikforurening. I Plastic Change samarbejder vi med både supermarkedskæder, start-ups og alt derimellem, hvor vi sammen udvikler partnerskaber for handling. Blandt alle samarbejdspartnere ligger fokus på reduktion af engangsplastik, mere genbrug og bedre bæredygtigt design.</p>
-</div>
-  <div class="flex items-center h-screen w-full bg-cover sticky top-0" style="background-image: url('/vand_baggrund3.png')" >
-	<p class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax3"><span class="text-2xl font-semibold">Køb merchandise</span><br>Hvis du har lyst til at støtte Plastic Change’ arbejde endnu mere, er du velkommen til at besøge webshoppen, hvor du kan købe og se vores udvalg af flot merchandise.<br>Vi donerer 5% af omsætningen til havet året rundt!<br><a href="https://www.hjemhavn.dk/collections/plastic-change-merchandise" class="font-semibold underline hover:text-[#FF1054]">Besøg webshoppen her</a></p>
-</div>
+  <h2 class="text-center">Vores arbejde</h2>
+  <div
+    class="flex items-center h-screen w-full bg-cover sticky top-0"
+    style="background-image: url('/vand_baggrund3.png')"
+  >
+    <p
+      class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax1"
+    >
+      <span class="text-2xl font-semibold">Uddannelse</span><br />I Plastic
+      Change ser vi det som en vigtig opgave at give kommende generationer
+      mulighed for at blive aktive medskabere af en grønnere fremtid. Derfor har
+      vi udarbejdet gratis undervisningsmateriale til folkeskole- og
+      gymnasieelever, der har til formål at oplyse, uddanne og engagere
+      fremtidige generationer i forhold til den stigende plastikforurening.
+    </p>
+  </div>
+  <div
+    class="flex items-center h-screen w-full bg-cover sticky top-0"
+    style="background-image: url('/vand_baggrund3.png')"
+  >
+    <p
+      class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax2"
+    >
+      <span class="text-2xl font-semibold">Virksomheder</span><br />Flere og
+      flere virksomheder indser vigtigheden i at bidrage til løsningen af den
+      stigende plastikforurening. I Plastic Change samarbejder vi med både
+      supermarkedskæder, start-ups og alt derimellem, hvor vi sammen udvikler
+      partnerskaber for handling. Blandt alle samarbejdspartnere ligger fokus på
+      reduktion af engangsplastik, mere genbrug og bedre bæredygtigt design.
+    </p>
+  </div>
+  <div
+    class="flex items-center h-screen w-full bg-cover sticky top-0"
+    style="background-image: url('/vand_baggrund3.png')"
+  >
+    <p
+      class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#07504F] text-white stickyparallax3"
+    >
+      <span class="text-2xl font-semibold">Køb merchandise</span><br />Hvis du
+      har lyst til at støtte Plastic Change’ arbejde endnu mere, er du velkommen
+      til at besøge webshoppen, hvor du kan købe og se vores udvalg af flot
+      merchandise.<br />Vi donerer 5% af omsætningen til havet året rundt!<br
+      /><a
+        href="https://www.hjemhavn.dk/collections/plastic-change-merchandise"
+        class="font-semibold underline hover:text-[#FF1054]"
+        >Besøg webshoppen her</a
+      >
+    </p>
+  </div>
 </section>
 
 <style>
-  .fullwidthsection{
+  .fullwidthsection {
     width: 100%;
     position: relative;
     left: 50%;
@@ -25,25 +64,24 @@ import Button from "./Button.astro"
     margin-right: -50vw;
   }
 </style>
-	<script>
-	/* Import af Motion One biblioteket */
-	import { animate, stagger, inView, scroll, timeline } from "motion";
+<script>
+  /* Import af Motion One biblioteket */
+  import { animate, stagger, inView, scroll, timeline } from "motion";
   scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
-		target: document.querySelector(".stickyparallax1"),
-	});
+    target: document.querySelector(".stickyparallax1"),
+  });
   scroll(animate(".stickyparallax2", { y: [-300, 0] }), {
-		target: document.querySelector(".stickyparallax2"),
-	});
+    target: document.querySelector(".stickyparallax2"),
+  });
   scroll(animate(".stickyparallax3", { y: [-300, 0] }), {
-		target: document.querySelector(".stickyparallax3"),
-	});
-	// import { animate, stagger, inView, scroll, timeline } from "motion";
+    target: document.querySelector(".stickyparallax3"),
+  });
+  // import { animate, stagger, inView, scroll, timeline } from "motion";
   // scroll(animate(".stickyparallax2", { y: [-500, 0] }), {
-	// 	target: document.querySelector(".stickyparallax2"),
-	// });
-	// import { animate, stagger, inView, scroll, timeline } from "motion";
+  // 	target: document.querySelector(".stickyparallax2"),
+  // });
+  // import { animate, stagger, inView, scroll, timeline } from "motion";
   // scroll(animate(".stickyparallax3", { y: [-500, 0] }), {
-	// 	target: document.querySelector(".stickyparallax3"),
-	// });
-
-	</script>
+  // 	target: document.querySelector(".stickyparallax3"),
+  // });
+</script>
