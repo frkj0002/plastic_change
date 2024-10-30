@@ -8,22 +8,26 @@ import Button from "../components/Button.astro";
 ---
 
 <section class="max-w-2xl mx-auto">
-  <h1 class="">Danmark er europamestre i affald</h1>
-  <p class="max-w-lg">Danmark er det land i Europa, der genererer mest affald pr. indbygger. På trods af, at vi i Danmark har et veludviklet affaldssystem, så ser vi stadig rigtig meget plastikforurening i den danske natur”</p>
+  <h2 class="">Danmark er europamestre i affald</h2>
+  <p class="max-w-lg">
+    Danmark er det land i Europa, der genererer mest affald pr. indbygger. På
+    trods af, at vi i Danmark har et veludviklet affaldssystem, så ser vi stadig
+    rigtig meget plastikforurening i den danske natur”
+  </p>
   <div class="flex justify-center items-center">
     <Image src={skrald} alt="" class="size-32 hidden md:block" />
-    <h3 class="text-[#FF1054] hidden md:block">= 1kg</h3>
+    <h4 class="text-[#FF1054] hidden md:block">= 1kg</h4>
   </div>
 </section>
 <section class="grid grid-cols-2 justify-items-center">
   <article class="hidden md:block">
-    <h3 class="text-[#FF1054]">Danmarks gennemsnit</h3>
+    <h4 class="text-[#FF1054]">Danmarks gennemsnit</h4>
     <Image src={dk_skrald} alt="" class="" />
     <p class="text-[128px] text-[#FF1054]">777 kg</p>
   </article>
   <article class="grid content-between">
     <div class="hidden md:block">
-      <h3 class="text-[#FF1054]">Europas gennemsnit</h3>
+      <h4 class="text-[#FF1054]">Europas gennemsnit</h4>
       <Image src={eu_skrald} alt="" class="" />
       <p class="text-[128px] text-[#FF1054]">450 kg</p>
     </div>
@@ -32,7 +36,11 @@ import Button from "../components/Button.astro";
         <Image src={skrald} alt="" class="relative size-[40rem]" />
         <Image src={medalje} alt="" class="absolute top-56 right-52 w-48" />
       </div>
-      <p class="w-60"><span>Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør en forskel og støt Plastic Change.</span></p>
+      <p class="w-60">
+        <span
+          >Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør
+          en forskel og støt Plastic Change.</span>
+      </p>
       <Button class="">Støt nu</Button>
     </div>
   </article>
