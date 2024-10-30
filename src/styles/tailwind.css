@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-h1{
-  @apply text-8xl;
-  @apply font-semibold;
-  @apply font-rubik;
-  @apply text-[#07504F];
-}
+  h1 {
+    @apply text-8xl;
+    @apply font-semibold;
+    @apply font-rubik;
+    @apply text-[#07504F];
+  }
   h2 {
     @apply text-3xl;
     @apply font-rubik;
     @apply text-[#07504F];
     @apply font-semibold;
-    @apply leading-loose
+    @apply leading-loose;
   }
   h3 {
     @apply text-2xl;
     @apply font-rubik;
     @apply text-[#07504F];
     @apply font-semibold;
-    @apply leading-loose
+    @apply leading-loose;
   }
 
   h4 {
@@ -29,12 +29,12 @@ h1{
     @apply font-rubik;
     @apply text-[#07504F];
     @apply font-semibold;
-    @apply leading-relaxed
+    @apply leading-relaxed;
   }
 
   p {
     @apply font-rubik;
-    @apply leading-loose
+    @apply leading-loose;
   }
 }
 
@@ -61,8 +61,8 @@ h1{
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
     }
   }
   @keyframes slide-right {
@@ -71,8 +71,8 @@ h1{
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
     }
   }
 
