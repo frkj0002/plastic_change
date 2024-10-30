@@ -1,5 +1,7 @@
 ---
-
+import { Image } from "astro:assets";
+import Skildpadde from "../assets/images/skildpadde.png";
+import Hval from "../assets/images/hval.png";
 ---
 
 <section class="max-w-2xl mx-auto">
@@ -18,5 +20,6 @@
   </p>
 </section>
 <section>
-  <p>(billeder av havdyr med skrald)</p>
+  <Image src={Skildpadde} alt=""/>
+  <Image src={Hval} alt="" />
 </section>
