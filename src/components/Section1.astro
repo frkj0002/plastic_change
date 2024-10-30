@@ -27,35 +27,45 @@ import bilde4 from "../assets/images/mikroplast4.webp";
 </section>
 <section class="max-w-2xl mx-auto mb-44">
   <h3>Du spiser plastik hver dag</h3>
-  <article class="grid grid-cols-3 md:gap-20 pt-6">
+  <article class="md:grid grid-cols-3 md:gap-20 pt-6">
     <div class="col-start-1 col-span-2">
-      <Image src={bilde1} alt="" class="" />
+      <Image src={bilde1} alt="flaske bliver til mikroplastik" />
     </div>
     <div class="col-start-3 col-span-1 flex self-center justify-self-center">
-      <p>Sollys og bølger nedbryder plastik til mikroplastik</p>
+      <h4 class="md:text-xl text-sm">
+        Sollys og bølger nedbryder plastik til mikroplastik
+      </h4>
     </div>
-    <div class="col-start-1 col-span-1 flex self-center justify-self-center">
-      <p>Mikroplastik suger miljøgifte og farlige kemikalier til sig</p>
+  </article>
+  <article class="md:grid grid-cols-3 md:gap-20 pt-6">
+    <div class="order-2 col-span-2">
+      <Image src={bilde2} alt="mikroplastik og gift" />
     </div>
-    <div class="col-start-2 col-span-2">
-      <Image src={bilde2} alt="" class="" />
+    <div class="order-1 col-span-1 flex self-center justify-self-center">
+      <h4 class="md:text-xl text-sm">
+        Mikroplastik suger miljøgifte og farlige kemikalier til sig
+      </h4>
     </div>
+  </article>
+  <article class="md:grid grid-cols-3 md:gap-20 pt-6">
     <div class="col-start-1 col-span-2">
-      <Image src={bilde3} alt="" class="" />
+      <Image src={bilde3} alt="fisk spiser plastik" />
     </div>
     <div class="col-start-3 col-span-1 flex self-center justify-self-center">
-      <p>
+      <h4 class="md:text-xl text-sm">
         Havdyrene indtager de giftige stoffer, når de spiser mikroplastikken
-      </p>
+      </h4>
     </div>
-    <div class="col-start-1 col-span-1 flex self-center justify-self-center">
-      <p>
+  </article>
+  <article class="md:grid grid-cols-3 md:gap-20 pt-6">
+    <div class="order-2 col-span-2">
+      <Image src={bilde4} alt="fisk på tallerken" />
+    </div>
+    <div class="order-1 col-span-1 flex self-center justify-self-center">
+      <h4 class="md:text-xl text-sm">
         Til sidst indtager vi mennesker de giftige stoffer, når vi spiser
         fiskene
-      </p>
-    </div>
-    <div class="col-start-2 col-span-2">
-      <Image src={bilde4} alt="" class="" />
+      </h4>
     </div>
   </article>
 </section>

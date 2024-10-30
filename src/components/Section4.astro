@@ -15,28 +15,43 @@ import Button from "../components/Button.astro";
     rigtig meget plastikforurening i den danske natur
   </p>
   <div class="flex justify-center items-center">
-    <Image src={skrald} alt="" class="size-32 hidden md:block" />
+    <Image
+      src={skrald}
+      alt="skrald"
+      class="size-32 hidden md:block"
+      format="webp"
+    />
     <h4 class="text-[#FF1054] hidden md:block">= 1kg</h4>
   </div>
 </section>
-<section class="grid grid-cols-2 justify-items-center">
+<section class="grid grid-cols-2 justify-items-center mb-44">
   <article class="hidden md:block">
     <h4 class="text-[#FF1054]">Danmarks gennemsnit</h4>
-    <Image src={dk_skrald} alt="" class="" />
+    <Image src={dk_skrald} alt="skraldeforbrug i danmark" format="webp" />
     <p class="text-[128px] text-[#FF1054]">777 kg</p>
   </article>
   <article class="grid content-between">
     <div class="hidden md:block">
       <h4 class="text-[#FF1054]">Europas gennemsnit</h4>
-      <Image src={eu_skrald} alt="" class="" />
+      <Image src={eu_skrald} alt="skraldeforbrug i eu" format="webp" />
       <p class="text-[128px] text-[#FF1054]">450 kg</p>
     </div>
     <div>
       <div class="relative rotate-12">
-        <Image src={skrald} alt="" class="relative size-[40rem]" />
-        <Image src={medalje} alt="" class="absolute top-56 right-52 w-48" />
+        <Image
+          src={skrald}
+          alt="skrald"
+          class="relative size-[40rem]"
+          format="webp"
+        />
+        <Image
+          src={medalje}
+          alt="medalje"
+          class="absolute top-56 right-52 w-48"
+          format="webp"
+        />
       </div>
-      <p class="w-60">
+      <p class="w-60 pb-5">
         <span
           >Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør
           en forskel og støt Plastic Change.</span
