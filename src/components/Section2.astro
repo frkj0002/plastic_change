@@ -1,14 +1,35 @@
 ---
-
+import { Image } from "astro:assets";
+import diagram from "../assets/images/soejlediagram.png";
+import hul from "../assets/images/hul.svg";
+import papir_groent from "../assets/images/papir_groent.png";
 ---
 
-<section>
-  <h1>section 2 - Hvordan bliver plastik brugt?</h1>
-  <p>
-    Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun
-    brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.
-  </p>
+<!-- <section class="relative">
+  <Image src={papir_groent} alt="" class="aboslute md:top-0 top-8 z-1" />
+  <h1 class="max-w-2xl mx-auto absolute">section 2 - Hvordan bliver plastik brugt?</h1>
+  <p class="max-w-lg absolute">Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.</p>
+  <Image src={hul} alt="" class="absolute md:top-0 top-8 z-1" />
+  <Image src={diagram} alt="" class="absolute md:top-0 top-8 z-2" />
 </section>
 <section>
   <p>Diagram</p>
+</section> --><!-- <section class="" id="sektion">
+  <h1 class="max-w-2xl mx-auto">section 2 - Hvordan bliver plastik brugt?</h1>
+  <p class="max-w-lg">Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.</p>
+</section> -->
+<section class="" id="">
+  <div class="max-w-2xl mx-auto">
+    <h1 class="max-w-lg">Hvordan bliver plastik brugt?</h1>
+    <p class="max-w-lg">Plastik er et ekstremt solidt og brugbart materiale. Men ofte bliver det kun brugt en gang – f.eks. ved emballage, plastikposer og engangskopper.</p>
+  </div>
+  <Image src={diagram} alt="" class="" />
+  <!-- <img src="public/stoejle.png" alt="" class="absolute z-0" /> -->
 </section>
+
+<!-- <style>
+  #sektion {
+    background-image: url(public/stoejle.png);
+    background-size: cover;
+  }
+</style> -->

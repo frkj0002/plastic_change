@@ -1,19 +1,30 @@
 ---
-
+import { Image } from "astro:assets";
+import bil from "../assets/images/bil.webp";
 ---
 
-<section>
+<section class="mt-[80rem] max-w-2xl mx-auto">
   <h1>section 1 - Hvad er plastikforurening?</h1>
-  <p>
-    Når plastikmaterialer ophober sig i naturen, gør det skade på både miljøet,
-    dyrelivet og menneskers sundhed!
-  </p>
-  <h2>Du spiser plastik hver dag</h2>
+  <p>Når plastikmaterialer ophober sig i naturen, gør det skade på både miljøet, dyrelivet og menneskers sundhed!</p>
+
   <p>Hvert år udledes der 8-10 mio. ton plastik til havet</p>
   <p>Det svarer til 1 lastbil med plastik, der tømmes hvert minut!</p>
 </section>
-<section>
+<!-- <section class="relative overflow-hidden w-full h-screen">
+  <div class="transform -scale-x-100 absolute left-1/4 translate-x-1/2 h-full">
+    <Image src={bil} alt="" class="" />
+  </div>
   <p>billede av lastebil</p>
+</section> -->
+
+<section class="relative overflow-hidden w-full h-screen">
+  <div class="transform -scale-x-100 absolute w-full md:top-8 top-8">
+    <Image src={bil} alt="" class="" />
+  </div>
+  <p>billede av lastebil</p>
+</section>
+<section class="max-w-2xl mx-auto">
+  <h2>Du spiser plastik hver dag</h2>
   <p>billede av flasker</p>
   <p>billede av mikroplastik og gift</p>
   <p>billede av fisk og mikroplastik</p>
