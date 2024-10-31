@@ -4,27 +4,37 @@
 
 @layer base {
   h1 {
+    @apply text-8xl;
+    @apply font-semibold;
+    @apply font-rubik;
+    @apply text-[#07504F];
+  }
+  h2 {
     @apply text-3xl;
     @apply font-rubik;
     @apply text-[#07504F];
     @apply font-semibold;
+    @apply leading-loose;
   }
-  h2 {
-    @apply text-2xl;
-    @apply font-rubik;
-    @apply text-[#07504F];
-    @apply font-semibold;
-  }
-
   h3 {
     @apply text-2xl;
     @apply font-rubik;
     @apply text-[#07504F];
     @apply font-semibold;
+    @apply leading-loose;
+  }
+
+  h4 {
+    @apply text-xl;
+    @apply font-rubik;
+    @apply text-[#07504F];
+    @apply font-semibold;
+    @apply leading-relaxed;
   }
 
   p {
     @apply font-rubik;
+    @apply leading-loose;
   }
 }
 
@@ -51,8 +61,8 @@
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
     }
   }
   @keyframes slide-right {
@@ -61,8 +71,8 @@
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
+      -webkit-transform: translateX(50px);
+      transform: translateX(50px);
     }
   }
 

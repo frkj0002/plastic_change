@@ -7,30 +7,61 @@ import ren from "../assets/images/ren.png";
 import vand from "../assets/images/vand.png";
 import vask from "../assets/images/vask.png";
 ---
-<section id="sektion">
-<section class="max-w-2xl mx-auto" style="background-image: url('/groent_papir.png');" >
-  <h1>Tag kampen op allerede i dag!</h1>
-  <p class="max-w-lg">Her er 6 råd om hvordan du i dagligdagen kan støtte kampen mod plastikforurening</p>
-</section>
-<section class="">
-  <div class="grid grid-cols-2 justify-items-center">
-    <Image src={toej} alt="" class="w-8/12" />
-    <Image src={creme} alt="" class="w-8/12" />
-  </div>
-  <div class="grid grid-cols-2 justify-items-center">
-    <Image src={kaffe} alt="" class="w-8/12" />
-    <Image src={vask} alt="" class="w-8/12" />
-  </div>
-  <div class="grid grid-cols-2 justify-items-center">
-    <Image src={ren} alt="" class="w-8/12" />
-    <Image src={vand} alt="" class="w-8/12" />
-  </div>
-</section>
+
+<section id="sektion" class="bg-[#07504F]">
+  <section
+    class="max-w-2xl mx-auto py-10"
+    style="background-image: url('/groent_papir.png');"
+  >
+    <h2 class="text-white">Tag kampen op allerede i dag!</h2>
+    <p class="max-w-lg text-white">
+      Her er 6 råd om hvordan du i dagligdagen kan støtte kampen mod
+      plastikforurening
+    </p>
+  </section>
+  <section class="grid justify-items-center md:grid-cols-12 mb-44">
+    <Image
+      src={toej}
+      alt="tøj"
+      class="w-full md:col-start-4 md:col-span-3 md:row-start-1"
+      format="webp"
+    />
+    <Image
+      src={creme}
+      alt="creme"
+      class="w-full md:col-start-7 md:col-span-3 md:row-start-1"
+      format="webp"
+    />
+    <Image
+      src={kaffe}
+      alt="kaffe"
+      class="w-full md:col-start-5 md:col-span-3 md:row-start-2"
+      format="webp"
+    />
+    <Image
+      src={vask}
+      alt="vaskemaskin"
+      class="w-full md:col-start-9 md:col-span-3 md:row-start-2"
+      format="webp"
+    />
+    <Image
+      src={ren}
+      alt="hender der vasker"
+      class="w-full md:col-start-3 md:col-span-3 md:row-start-3"
+      format="webp"
+    />
+    <Image
+      src={vand}
+      alt="vandhane"
+      class="w-full md:col-start-6 md:col-span-3 md:row-start-3"
+      format="webp"
+    />
+  </section>
 </section>
 
-<style>
+<!-- <style>
   #sektion{
     background-image: url(public/groent_papir.png);
     background-size: cover;
   }
-</style>
+</style> -->
