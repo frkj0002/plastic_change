@@ -1,51 +1,17 @@
 ---
 import Button from "../components/Button.astro";
-import { Image } from "astro:assets";
-import penge from "../assets/images/penge.webp";
 ---
 
-<h1 class="text-center mt-28">Giv et bidrag</h1>
-<section class="md:grid grid-cols-2">
-  <article>
-    <Image src={penge} alt="penge og hånd" />
-  </article>
-  <article class="px-10 pt-16">
-    <form>
-      Jeg vil gerne støtte Plastic Change med et
-      <select
-        id="belop"
-        name="belop"
-        class="border-0 text-[#FF1054] underline bg-[#C0D9D7]"
-      >
-        <option>månedlig</option>
-        <option>engangs</option>
-      </select> beløp med
-      <input
-        type="number"
-        name="number"
-        id="number"
-        placeholder="200"
-        class="border-0 bg-[#C0D9D7] underline text-[#FF1054] placeholder:text-[#FF1054] focus:outline-none focus:border-0"
-      />kr. Jeg er
-      <select
-        id="interesseret"
-        name="interesseret"
-        class="border-0 bg-[#C0D9D7] underline text-[#FF1054]"
-      >
-        <option>interesseret</option>
-        <option>ikke interesseret</option>
-      </select> i at blive opdateret i Plastic Changes arbejde på min mailadresse
-      <input
-        id="email"
-        name="email"
-        type="email"
-        autocomplete="email"
-        placeholder="andersand@gmail.com"
-        class="placeholder:text-[#FF1054] border-0 bg-[#C0D9D7] text-[#FF1054] underline"
-      />
-    </form>
-    <div class="pt-4">
-      <Button>Støt nu</Button>
-    </div>
-  </article>
+<section>
+  <h1>form - Giv et bidrag</h1>
+  <p>
+    Jeg vil gerne støtte Plastic Change med et månedligt/engangsbeløb med xxx
+    kr. Jeg er interesseret/ikke interesseret i at blive opdateret i Plastic
+    Change arbejde på min mailadresse xxxx (gør om til slots så det fungerer som
+    form)
+  </p>
+  <Button>Støt nu</Button>
+</section>
+<section>
+  <p>bitmap av hånd og penger</p>
 </section>
