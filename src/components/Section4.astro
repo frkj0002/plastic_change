@@ -1,21 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import dk_skrald from "../assets/images/dk-skrald.svg";
 import skrald_dk from "../assets/images/skrald_dk.svg";
 import skrald_eu from "../assets/images/skrald_eu.svg";
-import eu_skrald from "../assets/images/eu-skrald.svg";
 import skrald from "../assets/images/skrald.svg";
 import skraldsolo from "../assets/images/skraldsolo.webp";
-import medalje from "../assets/images/medalje.png";
 import skraldmedalje from "../assets/images/skraldmedalje2.webp";
 import Button from "../components/Button.astro";
 ---
 
 <section class="md:max-w-2xl md:mx-auto mx-5">
   <h2 class="leading-tight">Danmark er europamestre i affald</h2>
-  <p class="max-w-lg pb-12">Danmark er det land i Europa, der genererer mest affald pr. indbygger. På trods af, at vi i Danmark har et veludviklet affaldssystem, så ser vi stadig rigtig meget plastikforurening i den danske natur</p>
+  <p class="max-w-lg pb-12">
+    Danmark er det land i Europa, der genererer mest affald pr. indbygger. På
+    trods af, at vi i Danmark har et veludviklet affaldssystem, så ser vi stadig
+    rigtig meget plastikforurening i den danske natur
+  </p>
   <div class="flex justify-center items-center pb-10">
-    <Image src={skrald} alt="skrald" class="size-32 hidden md:block" format="webp" />
+    <Image
+      src={skrald}
+      alt="skrald"
+      class="size-32 hidden md:block"
+      format="webp"
+    />
     <h4 class="text-[#FF1054] text-4xl hidden md:block">= 10 kg</h4>
   </div>
 </section>
@@ -36,7 +42,10 @@ import Button from "../components/Button.astro";
         <Image src={skraldmedalje} alt="medalje" class="" format="webp" />
       </div>
       <h4 class="w-60 pb-5">
-        <span>Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør en forskel og støt Plastic Change.</span>
+        <span
+          >Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør
+          en forskel og støt Plastic Change.</span
+        >
       </h4>
       <Button class="">Støt nu</Button>
     </div>
@@ -45,19 +54,36 @@ import Button from "../components/Button.astro";
 <section class="md:hidden block mx-5">
   <article class="grid grid-cols-2 justify-items-center md:mb-44 gap-10">
     <div class="grid content-between justify-center justify-self-center">
-      <Image src={skraldmedalje} alt="medalje" class="w-36 h-aut justify-self-center" format="webp" />
-      <h4 class="text-[#FF1054] text-xl pb-2 justify-self-center">Danmarks gennemsnit</h4>
+      <Image
+        src={skraldmedalje}
+        alt="medalje"
+        class="w-36 h-aut justify-self-center"
+        format="webp"
+      />
+      <h4 class="text-[#FF1054] text-xl pb-2 justify-self-center">
+        Danmarks gennemsnit
+      </h4>
       <h4 class="text-[#FF1054] text-4xl pb-10 justify-self-center">777 kg</h4>
     </div>
     <div class="grid justify-self-center">
-      <Image src={skraldsolo} alt="medalje" class="w-36 h-auto justify-self-center" format="webp" />
-      <h4 class="text-[#FF1054] text-xl pb-2 justify-self-center">Europas gennemsnit</h4>
+      <Image
+        src={skraldsolo}
+        alt="medalje"
+        class="w-36 h-auto justify-self-center"
+        format="webp"
+      />
+      <h4 class="text-[#FF1054] text-xl pb-2 justify-self-center">
+        Europas gennemsnit
+      </h4>
       <h4 class="text-[#FF1054] text-4xl pb-10 justify-self-center">480 kg</h4>
     </div>
   </article>
   <div class="pb-5">
     <h4 class="pb-5">
-      <span>Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør en forskel og støt Plastic Change.</span>
+      <span
+        >Synes du også det er <span class="text-[#FF1054]">HELT</span> galt? Gør
+        en forskel og støt Plastic Change.</span
+      >
     </h4>
     <div class="">
       <Button class="">Støt nu</Button>
