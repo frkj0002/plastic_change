@@ -80,5 +80,11 @@ const schemamarkup = {
     <Section6 />
   </article>
 </MainLayout>
+<div class="progress-bar h-4 fixed w-full bg-[#FF1054] left-0 origin-top-left top-0 right-0"></div>
+
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+  scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+</script>
 
 <script type="application/ld+json"></script>
